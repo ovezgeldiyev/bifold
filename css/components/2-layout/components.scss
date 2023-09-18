@@ -1,0 +1,69 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  position: relative;
+  font-weight: normal;
+  margin: 0in;
+  background: none;
+}
+
+.page-break {
+  border: none;
+  margin: 0;
+  page-break-before: always;
+}
+
+.wrapper {
+  max-width: 17.08in;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h1 {
+}
+h2 {
+  font-size: 18pt;
+  line-height: 20pt;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+  span {
+    font-size: 14pt;
+    display: block;
+    color: #707176;
+    letter-spacing: -0.02em;
+  }
+}
+h3 {
+  font-size: 15pt;
+  line-height: 16pt;
+  font-weight: 700;
+  font-family: $trajan;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+h4 {
+  font-size: 13.5pt;
+  line-height: 14pt;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-align: end;
+  em {
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+  }
+}
+.logo {
+  width: 2.22in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 2.22in;
+  }
+}

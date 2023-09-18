@@ -1,0 +1,149 @@
+.layout {
+  overflow: hidden;
+  position: relative;
+  size: 17.08in 11.33in;
+  min-height: 11.33in;
+  min-width: 17.08in;
+  background-color: $white;
+  &__inner {
+    min-width: 17.08in;
+    min-height: 11.33in;
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.791in;
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 17.08in;
+      height: 11.33in;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      pointer-events: none;
+      &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &:last-child {
+          align-items: flex-end;
+          span {
+            align-items: flex-end;
+          }
+        }
+      }
+      span {
+        width: 0.3045in;
+        height: 0.3045in;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+        img {
+          width: 0.3045in;
+        }
+      }
+    }
+    &-content {
+      width: 5.3125in;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      position: relative;
+      h2 {
+        margin-bottom: 0.125in;
+        span {
+          margin-top: 0.083in;
+        }
+      }
+      p {
+        margin-bottom: 0.1875in;
+        span {
+          width: 0.104167in;
+          height: 0.104167in;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0.04166in 0.03125in 0 0;
+          img {
+            width: 0.104167in;
+          }
+        }
+      }
+    }
+    &-avatar {
+      width: 1.278in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.29167in;
+      img {
+        width: 1.278in;
+      }
+    }
+    &-image {
+      padding-bottom:8in;
+      position: relative;
+      height: 100%;
+      &-wrapper {
+        width:7.307in;
+        position: relative;
+        overflow: hidden;
+        h3 {
+          position: absolute;
+          bottom: 0.274in;
+          right: 0.182in;
+          text-align: end;
+          color: #fff;
+        }
+        .logo {
+          width: 3.57in;
+          position: absolute;
+          top: 0.22916in;
+          right: 0.24in;
+          img {
+          width: 3.57in;
+          }
+        }
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+      }
+    }
+    &-col {
+      width:7.307in;
+      & > h4 {
+        padding-top: 0.104167in;
+      }
+    }
+  }
+  &Item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.22916666666666666in;
+    &:last-of-type {
+      margin: 0;
+    }
+    &__image {
+      width:7.307in;
+      position: relative;
+      padding-bottom: 4.079in;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+      }
+    }
+    &__content {
+      padding-top: 0.22916666666666666in;
+    }
+  }
+}
